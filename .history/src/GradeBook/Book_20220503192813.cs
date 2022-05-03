@@ -16,26 +16,27 @@ namespace GradeBook
                 grades.Add(grade);
             }
         }
-        public Statistics GetStatistics() //tells method to return object of type Statistics class.
+        public Statistics GetStatistics() //tells method to return object of type Stats class.
         {
-            var result = new Statistics();
-            result.Average = 0.0;
+            var result = 0.0;
             //highest possible double. Sets it up to compare
-            result.High = double.MinValue;
+            var high = double.MinValue;
             //lowest possible double. Sets it up to compare
-            result.Low = double.MaxValue;
+            var low = double.MaxValue;
             foreach(var grade in grades)
             {
                 //compares high to current grade, assigns high to new highest value.
-                result.High = Math.Max(grade, result.High);
+                high = Math.Max(grade, high);
                 //compares low to current grade, assigns low to new lowest value.
-                result.Low = Math.Min(grade, result.Low);
+                low = Math.Min(grade, low);
 
-                result.Average += grade;
+                result += grade;
             }
-            result.Average /= grades.Count;
-
-            return result;
+            result /= grades.Count;
+            //prints out the result using string interpolation and formatting to display to 1 decimal point.
+            Console.WriteLine($"The highest grade is {high}");
+            Console.WriteLine($"The lowest grade is {low}");
+            Console.WriteLine($"The average grade is {result:N1}");
         }
         private List<double> grades;
         private string Name;

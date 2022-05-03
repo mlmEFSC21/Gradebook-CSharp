@@ -17,7 +17,5 @@ public class BookTests
         var result = book.GetStatistics(); //this method is doing too many things. We need to break it up. Small classes and small methods.
         //Assert
         Assert.Equal(85.6, result.Average);
-        Assert.Equal(90.5, result.High);
-        Assert.Equal(77.3, result.Low);
     }
 }

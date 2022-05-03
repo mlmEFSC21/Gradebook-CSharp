@@ -14,10 +14,8 @@ public class BookTests
         book.AddGrade(90.5);
         book.AddGrade(77.3);
         //Act
-        var result = book.GetStatistics(); //this method is doing too many things. We need to break it up. Small classes and small methods.
+        var result = book.ShowStatistics(); //this method is doing too many things. We need to break it up. Small classes and small methods.
         //Assert
         Assert.Equal(85.6, result.Average);
-        Assert.Equal(90.5, result.High);
-        Assert.Equal(77.3, result.Low);
     }
 }
