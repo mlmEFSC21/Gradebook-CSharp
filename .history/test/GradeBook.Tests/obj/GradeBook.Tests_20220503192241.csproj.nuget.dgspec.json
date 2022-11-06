@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Matth\\gradebook\\src\\GradeBook\\GradeBook.csproj": {}
+    "c:\\Users\\Matth\\gradebook\\.history\\test\\GradeBook.Tests\\GradeBook.Tests_20220503192241.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Matth\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
+    "c:\\Users\\Matth\\gradebook\\.history\\test\\GradeBook.Tests\\GradeBook.Tests_20220503192241.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Matth\\gradebook\\src\\GradeBook\\GradeBook.csproj",
-        "projectName": "GradeBook",
-        "projectPath": "c:\\Users\\Matth\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+        "projectUniqueName": "c:\\Users\\Matth\\gradebook\\.history\\test\\GradeBook.Tests\\GradeBook.Tests_20220503192241.csproj",
+        "projectName": "GradeBook.Tests_20220503192241",
+        "projectPath": "c:\\Users\\Matth\\gradebook\\.history\\test\\GradeBook.Tests\\GradeBook.Tests_20220503192241.csproj",
         "packagesPath": "C:\\Users\\Matth\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Matth\\gradebook\\src\\GradeBook\\obj\\",
+        "outputPath": "c:\\Users\\Matth\\gradebook\\.history\\test\\GradeBook.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
